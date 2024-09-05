@@ -132,34 +132,26 @@ export default function Home() {
             transition: { duration: 0.1 },
           }}
           onHoverStart={(event, info) => {
-            console.log("event:", event);
-            console.log("info:", info);
             // Função de retorno de chamada que é acionada quando o ponteiro começa a passar o mouse sobre o componente.
-            // console.log("passei o mouse!");
           }}
           onHoverEnd={(event, info) => {
             // Função de retorno de chamada que é acionada quando o ponteiro para de pairar sobre o componente.
-            // console.log("parei de passar sobre o componente o mouse!");
           }}
           whileTap={{ scale: 0.9, transition: { duration: 0.5 } }}
           onTap={(event, info) => {
             // Retorno de chamada quando o gesto de toque termina com êxito neste elemento
-            console.log("cliquei e terminei nesse componente na ui");
           }}
           onTapStart={(event, info) => {
             // Retorno de chamada quando o gesto de toque é iniciado neste elemento
-            console.log("inicie o clique nesse componente na ui");
           }}
           onTapCancel={(event, info) => {
             // Retorno de chamada quando o gesto de toque termina fora desse elemento.
-            console.log("soltei o clique fora deste componente na ui");
           }}
           className="group rounded-lg px-5 py-4"
           drag
           dragDirectionLock
           onDirectionLock={(axis) => {
             // A função de retorno de chamada que dispara uma direção de arrasto é determinada.
-            console.log(axis);
           }}
           dragConstraints={{ left: 0, top: 0, bottom: 0, right: 300 }}
           dragSnapToOrigin
@@ -167,15 +159,12 @@ export default function Home() {
           dragTransition={{ bounceStiffness: 100, bounceDamping: 10 }}
           onDrag={() => {
             // Função de retorno de chamada que é acionada quando o componente é arrastado.
-            console.log("arrastei o elemento na ui");
           }}
           onDragStart={() => {
             // Função de retorno de chamada que é acionada quando o arrastar é iniciado.
-            console.log("iniciei o arrastamento do elemento");
           }}
           onDragEnd={() => {
             // Função de retorno de chamada que é acionada quando o arrasto termina.
-            console.log("parei de arrastar.");
           }}
           whileDrag={{
             opacity: 0.8,
