@@ -2,12 +2,13 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import ExampleGesture from "./components/docs/example-gesture";
-import ExampleAnimatePresence from "./components/docs/example-animate-presence";
-import ExampleVariants from "./components/docs/example-variants";
-import ExampleOrchestration from "./components/docs/example-orchestration";
-import ExamplePropagation from "./components/docs/example-propagation";
-import ExampleHookUseScroll from "./components/docs/example-hook-use-scroll";
+import ExampleGesture from "@/components/docs/example-gesture";
+import ExampleAnimatePresence from "@/components/docs/example-animate-presence";
+import ExampleVariants from "@/components/docs/example-variants";
+import ExampleOrchestration from "@/components/docs/example-orchestration";
+import ExamplePropagation from "@/components/docs/example-propagation";
+import ExampleHookUseScroll from "@/components/docs/example-hook-use-scroll";
+import ExampleInView from "@/components/docs/example-in-view";
 
 // Notificar quando o componente (motion) é desmontado ou está na árvore.
 // Adiar a desmontagem do componente (motion) até que a operação (animação) seja concluída.
@@ -81,9 +82,9 @@ export default function Home() {
         </a>
         <ExampleGesture />
       </div>
-      <section className="h-svh" />
+      <div className="w-full h-svh" />
       <ExampleHookUseScroll />
-      <section className="h-svh" />
+      <ExampleInView />
     </main>
   );
 }
