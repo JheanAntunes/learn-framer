@@ -10,6 +10,7 @@ import ExamplePropagation from "@/components/docs/example-propagation";
 import ExampleHookUseScroll from "@/components/docs/example-hook-use-scroll";
 import ExampleInView from "@/components/docs/example-in-view";
 import ExampleHookUseAnimate from "@/components/docs/example-hook-use-animate";
+import ExampleReorder from "@/components/docs/example-reorder";
 
 // Notificar quando o componente (motion) é desmontado ou está na árvore.
 // Adiar a desmontagem do componente (motion) até que a operação (animação) seja concluída.
@@ -87,6 +88,7 @@ export default function Home() {
       <ExampleHookUseScroll />
       <ExampleInView />
       <ExampleHookUseAnimate />
+      <ExampleReorder />
     </main>
   );
 }
