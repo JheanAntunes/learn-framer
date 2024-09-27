@@ -13,7 +13,7 @@ O staggerChildren é uma propriedade usada no Framer Motion para criar animaçõ
       opacity: 1,
       transition: {
         when: "beforeChildren",
-        staggerChildren: 0.3,
+        staggerChildren: 0.5,
       },
     },
     hidden: {
