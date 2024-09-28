@@ -59,6 +59,15 @@
   }
 }
 
+@layer components {
+  .switch {
+    justify-content: flex-start;
+  }
+  .switch[data-direction="true"] {
+    justify-content: flex-end;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
